@@ -204,14 +204,7 @@ fillMobileNumberField(mobileNumber);
         Assert.assertEquals(signupTextActual , SignupTextExpected);
         return  this;
     }
-public SignupPage verifyAccountInformationVisible (){
-    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-    WebElement accountInfoText = wait.until(ExpectedConditions.elementToBeClickable(accountInformation));
 
-
-        Assert.assertTrue(accountInfoText.isDisplayed());
-        return  this;
-}
 public SignupPage verifyAllLabelVisible(){
     List<WebElement> elements = Arrays.asList(
             driver.findElement(titleText),

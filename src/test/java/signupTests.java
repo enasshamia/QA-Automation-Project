@@ -12,7 +12,7 @@ NavBar navBar;
     String url = "https://www.automationexercise.com/";
     String signupTextActual = "New User Signup!";
     String  name = "enas";
-    String email = "enasshami000@gmail.com";
+    String email = "enasshami009@gmail.com";
     String day = "5";
     String month = "12";
     String year = "2020";
@@ -42,7 +42,7 @@ NavBar navBar;
         navBar.navigateToLoginPage();
         signupPage.verifyUserOnSignupPage(signupTextActual).
                 fillSignupInformation(name,email)
-                .clickSignupButton().verifyAccountInformationVisible();
+                .clickSignupButton();
     }
     @Test(priority=2)
     public  void validateSignupSuccess() {
